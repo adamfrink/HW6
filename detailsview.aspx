@@ -60,7 +60,7 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" DefaultMode="Insert" Height="50px" Width="347px">
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" Height="50px" Width="347px">
             <Fields>
                 <asp:BoundField DataField="Reciepe Name" HeaderText="Reciepe Name" SortExpression="Reciepe Name" />
                 <asp:BoundField DataField="Submitted By" HeaderText="Submitted By" SortExpression="Submitted By" />
@@ -71,7 +71,7 @@
                 <asp:BoundField DataField="Ingredient #5" HeaderText="Ingredient #5" SortExpression="Ingredient #5" />
                 <asp:BoundField DataField="Preparation" HeaderText="Preparation" SortExpression="Preparation" />
                 <asp:BoundField DataField="Notes" HeaderText="Notes" SortExpression="Notes" />
-                <asp:CommandField ShowInsertButton="True" />
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Fields>
         </asp:DetailsView>
     

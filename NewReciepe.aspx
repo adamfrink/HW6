@@ -60,7 +60,7 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" Height="50px" Width="347px">
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" Height="50px" Width="347px" DefaultMode="Insert">
             <Fields>
                 <asp:BoundField DataField="Reciepe Name" HeaderText="Reciepe Name" SortExpression="Reciepe Name" />
                 <asp:BoundField DataField="Submitted By" HeaderText="Submitted By" SortExpression="Submitted By" />
