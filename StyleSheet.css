@@ -1,0 +1,30 @@
+﻿body {
+    background-color: #D2B48C;
+}
+
+.center
+ {
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:200px;
+ margin-bottom:auto;
+ width:60%;
+ background:#F7FFE5;
+ border:solid 10px #5C7F46;
+ 
+}
+
+.coral {
+    background-color: #F08080;
+}
+
+
+
+.alt {
+    background-color: #FFE89C;
+    text-align: center;
+}
+
+.textCenter {
+    text-align: center;
+}

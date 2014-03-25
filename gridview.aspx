@@ -5,13 +5,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+
+    <link rel="StyleSheet" type="text/css" href="./StyleSheet.css" />
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
-    <h2> Red's Rad Reciepes </h2>
+    <h2> Wicked Easy Reciepes </h2>
         <h3>
-            Rad Reciepes With 5 or Less Rad Ingredients
+            Using 5 Ingredients or Less
         </h3>
 
         <a href="gridview.aspx">Home</a>
@@ -25,7 +27,8 @@
 
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cs_reciepeDatabase %>" SelectCommand="SELECT * FROM [Table]"></asp:SqlDataSource>
         <br />
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="Id" Class="coral" DataSourceID="SqlDataSource1">
+            <AlternatingRowStyle CssClass ="alt" BorderStyle="None" />
             <Columns>
                 <asp:BoundField DataField="Reciepe Name" HeaderText="Reciepe Name" SortExpression="Reciepe Name" />
                 <asp:BoundField DataField="Submitted By" HeaderText="Submitted By" SortExpression="Submitted By" />
