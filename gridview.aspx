@@ -10,21 +10,25 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    <h2> Wicked Easy Reciepes </h2>
-        <h3>
-            Using 5 Ingredients or Less
-        </h3>
-
-        <a href="gridview.aspx">Home</a>
-        <br />
-        <a href="NewReciepe.aspx">New Reciepe</a>
-        <br />
-        <a href="about.aspx">About</a>
-        <br />
-        <a href="contactUs.aspx">Contact Us</a>
+   
+        
+      <div id="header">  
+    <h2 class="textCenter"> Wicked Easy Reciepes </h2>
+        
+    <h3 class="textCenter"> Using 5 Ingredients or Less </h3>
+        
         </div>
-
+        
+        <div id="nav">
+	<ul>
+		<li> <a href="gridview.aspx">Home</a>  </li> 
+		<li> <a href="NewReciepe.aspx">New Reciepe</a> </li> 
+        <li> <a href="about.aspx">About</a> </li> 
+		<li> <a href="contactUs.aspx">Contact Us</a> </li>
+	</ul>
+        </div>
+       
+         <div id="center">
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cs_reciepeDatabase %>" SelectCommand="SELECT * FROM [Table]"></asp:SqlDataSource>
         <br />
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="Id" Class="coral" DataSourceID="SqlDataSource1">
